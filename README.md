@@ -14,3 +14,13 @@ Paper Link: https://arxiv.org/abs/1909.02950
 
 Trust Score repository: https://github.com/google/TrustScore
 Paper Link: https://arxiv.org/abs/1805.11783
+
+### Requirements
+The thesis_gpu.yml file contains the necessary packages to run the code. 
+
+### Train procedure
+First run train.py with the chosen arguments, e.g., model and save_dir. 
+After that you can run create_embeddings.py to make and save the embeddings to be used in the trust score analysis. 
+Then you can run get_shapley_values.py to make and save the shapley values of the embeddings for the trust score analysis. 
+
+Then locally, you can run the Jupyter notebook, trustscore_evaluation.ipynb. You need to carefully fill in the arguments, and run the cells belonging to the chosen model (image or mmbt). 
